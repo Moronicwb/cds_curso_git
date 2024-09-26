@@ -12,6 +12,15 @@ def load_data():
     """
     return pd.read_csv("data/processed/bikes_completed.csv")
 
-df = load_data()
+def main():
+    """
+    Run the main script.
+    """
+    # Load the data
+    df = load_data()
 
-st.dataframe(df)
+    # Display the data
+    st.dataframe(df)
+
+if __name__ == "__main__":
+    main()
