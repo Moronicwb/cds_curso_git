@@ -71,6 +71,8 @@ def main():
     # Load the data
     df_raw = load_data()
 
+
+    create_dataframe_section(df_raw)
     # Display the data
     st.dataframe(df_raw)
 
